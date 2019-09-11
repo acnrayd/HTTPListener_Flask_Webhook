@@ -9,7 +9,7 @@ Precautions:
 How-to use:
 * Start the script. In default it listens from: http://IP_ADDRESS:5000/listener
 * Send data using HTTP POST method. I suggest using Postman for this. Curl is also OK, for example:
-    * curl -X POST \ http://SERVER_IP:5000/listener \ -H 'cache-control: no-cache' \ -H 'content-type: application/json' \ -d '{"actualdata1": "value1"}'
+    * curl -X POST http://SERVER_IP:5000/listener -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{"actualdata1": "value1"}'
 * After you stop the script, all received data will be written into results.json.
 
 Reason I worked on this:
